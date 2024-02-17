@@ -11,8 +11,9 @@
     <title>Document</title>
   </head>
   <body>
+    <div>
     <div
-      class=" text-black shadow-lg flex justify-between items-center p-1"
+      class=" text-black shadow-md flex justify-between items-center p-1"
     >
       <a href="" class="font-bold py-2 px-4 rounded hover:text-blue-700 hover:bg-white text-#fff-500 bg-gradient-to-r from-blue-400 via-#fff-500 to-#000-500 rounded-lg shadow-lg hover:scale-105 transition-transform duration-500 p-1"">LOGO</a>
       <ul class="grid grid-cols-4 gap-4 bg-blue">
@@ -22,5 +23,34 @@
         <li class="hover:bg-blue-200 text-black font-bold py-2 px-4 rounded transition-transform duration-300 transform hover:scale-110">Profile</li>
       </ul>
     </div>
+    <div class="grid grid-cols-4 gap-2 bg-blue mt-10 p-5">
+      <div class="p-2 w-1/2 h-20 flex justify-center flex-col items-center rounded-lg border-r-4 border-ash-500 border bg-red-400">
+        In-Queue
+        <p>10</p>
+      </div>
+      <div class="p-2 w-1/2 h-20 flex justify-center flex-col items-center rounded-lg border-l-4 border-r-4 border-r-green-500 border bg-green-200">
+        In Progress
+      </div>
+      <div class="p-2 w-1/2 h-20 flex justify-center flex-col items-center rounded-lg border-l-4 border-l-red-500 border bg-blue-200">
+        Done
+      </div>
+      <div>
+        <div class="flex items-center justify-center flex-col">
+          <h1>Add Task Here</h1>
+          <div class="flex items-center justify-center">
+            <div class="relative">
+              <input type="text" class="bg-gray-200 text-gray-800 rounded-lg pl-10 pr-4 py-2 focus:outline-none focus:shadow-outline" placeholder="Enter text here">
+              <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                <i class="fas fa-plus-circle text-gray-500"></i>
+              </div>
+            </div>
+            <button class="ml-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg px-4 py-2 focus:outline-none">Add</button>
+          </div>
+          </div>
+        </div>  
+                 
+      </div>
+    </div>
+  </div>
   </body>
 </html>
